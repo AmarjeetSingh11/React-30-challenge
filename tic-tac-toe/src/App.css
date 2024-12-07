@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    background-color: pink;
+}
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    
+}
+
+/* Style for each row in the grid */
+.board-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+}
+
+/* Style for each cell in the grid */
+.square{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 6px;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ccc;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    user-select: none;  /* Prevent text selection */
+}
+
+/* Hover effect for each cell */
+.square:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Style for when a cell is clicked or active */
+.square.active {
+    background-color: #e0e0e0;
+}
+
+/* Style for X and O marks */
+.square.x {
+    color: #d32f2f; /* Red for 'X' */
+}
+
+.square.o {
+    color: #1976d2; /* Blue for 'O' */
+}
+
+/* Optional: Style for reset button */
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #004d40;
+}
