@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.stp-container{
+    background-color: whitesmoke;
+    width: 500px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading{
+    color: whitesmoke;
+    padding: 20px 20px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-reset{
+    background-color: aqua;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn-stop{
+    background-color: aqua;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn-container {
+    display: flex;          
+    justify-content: center;
+    align-items: center;     
+    gap: 10px;               
+    margin-top: 20px;        
+}
